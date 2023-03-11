@@ -9,7 +9,7 @@ import 'element-theme-default';
 import './styles/base.scss';
 import './styles/prism.css';
 
-import App from './page';
+import App from './newPage';
 
 function inChinaConfirm() {
   import('../src/message-box').then(MessageBox => {

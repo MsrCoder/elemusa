@@ -125,57 +125,6 @@ export default class App extends React.Component {
             </ul>
           </div>
         </header>
-        <div className="main container">
-          <nav className="side-nav">
-            <ul>
-              <li className="nav-item">
-                <a>{this.getLocale('misc.development')}</a>
-                <ul className="pure-menu-list sub-nav">
-                  {
-                    Object.keys(pages.documents).map(page => {
-                      return (
-                        <li className="nav-item" key={page}>
-                          <a href={`#/${this.state.locale}/${page}`} className={page === this.state.page ? 'active' : ''}>{this.getLocale(`page.${page}`)}</a>
-                        </li>
-                      )
-                    })
-                  }
-                </ul>
-              </li>
-              <li className="nav-item">
-                <a>{this.getLocale('misc.components')}</a>
-                {
-                  Object.keys(pages.components).map(group => {
-                    return (
-                      <div className="nav-group" key={group}>
-                        <div className="nav-group__title">{group}</div>
-                        <ul className="pure-menu-list">
-                          {
-                            Object.keys(pages.components[group]).map(page => {
-                              return (
-                                <li key={page} className="nav-item">
-                                  <a href={`#/${this.state.locale}/${page}`} className={page === this.state.page ? 'active' : ''}>{this.getLocale(`page.${page}`)}</a>
-                                </li>
-                              )
-                            })
-                          }
-                        </ul>
-                      </div>
-                    )
-                  })
-                }
-              </li>
-            </ul>
-          </nav>
-          <div className="content">
-            { this.getComponent(this.state.page) }
-            <ScrollToTop showUnder={210}>
-              <div className="page-component-up">
-                <i className="el-icon-caret-top"></i>
-              </div>
-            </ScrollToTop>
-          </div>
-        </div>
         <footer className="footer">
           <div className="container">
             <div className="footer-main">
