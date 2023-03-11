@@ -128,7 +128,7 @@ export default class App extends React.Component {
         <footer className="footer">
           <div className="container">
             <div className="footer-main">
-              <p className="footer-main-title">bi sn bekle bekliuoytm</p>
+              <p className="footer-main-title">bi sn bedsajdfnasfnsınga</p>
               <a href="https://github.com/eleme/element-react/issues" target="_blank" rel="noopener noreferrer" className="footer-main-link">{this.getLocale('misc.feedback')}</a>
               <a href="https://github.com/eleme/element-react/blob/master/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer" className="footer-main-link">{this.getLocale('misc.contribution')}</a>
               <a href={`http://element.eleme.io/#/${this.state.locale}/component/${this.state.page}`} target="_blank" rel="noopener noreferrer" className="footer-main-link">Element</a>
